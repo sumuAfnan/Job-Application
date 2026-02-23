@@ -20,7 +20,29 @@ tailwind.config = {
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-[#F8FAFC]">
     
+    <section  class=" max-w-[1110px]  w-full mx-auto w-1/2 font-geist" >
+<div class="text-[#002C5C] font-bold text-[32px] pb-5">Job Application Tracker</div>
+<div class="grid grid-cols-3 gap-4 ">
+    <!-- card1 counter -->
+    <div class="bg-[#FFFFFF] rounded-lg shadow p-5">
+        <p  class="font-medium text-[14px] text-[#323B49] pb-[8px]" >Total</p>
+        <h2 id="totalC" class="font-bold text-[24px] text-[#002C5C]">8</h2>
+    </div>
+    <!-- card-2 -->
+    <div class="bg-[#FFFFFF] rounded-lg shadow p-5">
+        <p class="font-medium text-[14px] text-[#323B49] pb-[8px]" >Interview</p>
+        <h2 id="interViewC" class="font-bold text-[24px] text-[#10B981]">0</h2>
+    </div>
+     <!-- card-3 -->
+    <div class="bg-[#FFFFFF] rounded-lg shadow p-5">
+        <p class="font-medium text-[14px] text-[#323B49] pb-[8px]" >Rejected</p>
+        <h2 id="rejectC" class="font-bold text-[24px] text-[#EF4444]">0</h2>
+    </div>
+  
+</div>
+  <hr class="w-full h-[1px] bg-gray-300 mt-[30px] border-none">
+    </section>
 </body>
 </html>
