@@ -40,3 +40,21 @@ function changeStatus(button, status) {
   updateCounters();
   applyFilter(currentFilter);
 }
+//counter update korlam
+function updateCounters() {
+  const jobCards = document.querySelectorAll('[data-info-status]');
+  let total = jobCards.length;
+  let interview = 0;
+  let rejected = 0;
+
+  jobCards.forEach(card => {
+    const status = card.getAttribute('data-info-status');
+    if(status === 'interview') interview++;
+    else if(status === 'rejected') rejected++;
+  });
+
+  totalC.textContent = total;
+  interViewC.textContent = interview;
+  rejectC.textContent = rejected;
+  availableC.textContent = total;
+}
