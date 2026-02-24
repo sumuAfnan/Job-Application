@@ -89,3 +89,18 @@ function applyFilter(filter) {
  allBtn.addEventListener('click', () => applyFilter('all'));
 interViewBtn.addEventListener('click', () => applyFilter('interview'));
 rejectBtn.addEventListener('click', () => applyFilter('rejected'));
+
+// card delet
+document.addEventListener('click', e => {
+  if(e.target.matches("img[src*='Trash']")) {
+    const card = e.target.closest('[data-info-status]');
+    if(card){
+      card.remove();
+      updateCounters();
+      applyFilter(currentFilter);
+    }
+  }
+});
+// Initial setup
+updateCounters();
+applyFilter('all');
