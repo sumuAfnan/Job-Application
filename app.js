@@ -83,7 +83,7 @@ function applyFilter(filter) {
 //tab button highlight korlam ternery diye
    allBtn.className = filter==='all' ? 'bg-[#3B82F6] text-[#FFFFFF] px-[32px] py-[10px] text-[12px] mt-[24px] font-semibold rounded' : 'border-2 border-[#F1F2F4] bg-[#FFFFFF] text-[#64748B] px-[32px] py-[10px] text-[12px] mt-[24px] font-semibold rounded';
   interViewBtn.className = filter==='interview' ? 'bg-[#3B82F6] text-[#FFFFFF] px-[32px] py-[10px] text-[12px] mt-[24px] font-semibold rounded' : 'border-2 border-[#F1F2F4] bg-[#FFFFFF] text-[#64748B] px-[32px] py-[10px] text-[12px] mt-[24px] font-semibold rounded';
-  rejectBtn.className = filter==='rejected' ? 'bg-[#3B82F6] text-[#FFFFFF] px-4 sm:px-[32px] py-[10px] text-[12px] mt-[24px] font-semibold rounded' : 'border-2 border-[#F1F2F4] bg-[#FFFFFF] text-[#64748B] px-[32px] py-[10px] text-[12px] mt-[24px] font-semibold rounded';
+  rejectBtn.className = filter==='rejected' ? 'bg-[#3B82F6] text-[#FFFFFF] px-[30px] sm:px-[32px] py-[10px] text-[12px] mt-[24px] font-semibold rounded' : 'border-2 border-[#F1F2F4] bg-[#FFFFFF] text-[#64748B] px-[32px] py-[10px] text-[12px] mt-[24px] font-semibold rounded';
 }
 //kon tab a kon card dakhabe
  allBtn.addEventListener('click', () => applyFilter('all'));
