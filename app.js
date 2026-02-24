@@ -3,7 +3,7 @@ const totalC = document.getElementById("totalC");
 const interViewC = document.getElementById("interViewC");
 const rejectC = document.getElementById("rejectC");
 const availableC = document.getElementById("availableC");
-
+let currentFilter = 'all';
 // button guli k dhore const (namguli) te rakhlam jate pore click kore kaaj korate pari
 const allBtn = document.getElementById("allBtn");
 const interViewBtn = document.getElementById("interViewBtn");
