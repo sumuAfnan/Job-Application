@@ -56,7 +56,7 @@ function updateCounters() {
   totalC.textContent = total;
   interViewC.textContent = interview;
   rejectC.textContent = rejected;
-  availableC.textContent = total;
+  availableC.textContent = total + " jobs";
 }
 
 
@@ -79,6 +79,18 @@ function applyFilter(filter) {
   });
 
   emptyState.classList.toggle('hidden', visibleCount > 0);
+
+  const total = totalC.textContent;
+
+if(filter === 'all'){
+  availableC.textContent = total + " jobs";
+}
+else if(visibleCount === 0){
+  availableC.textContent = "0 job";
+}
+else{
+  availableC.textContent = visibleCount + " of " + total + " jobs";
+}
 
 //tab button highlight korlam ternery diye
    allBtn.className = filter==='all' ? 'bg-[#3B82F6] text-[#FFFFFF] px-[32px] py-[10px] text-[12px] mt-[24px] font-semibold rounded' : 'border-2 border-[#F1F2F4] bg-[#FFFFFF] text-[#64748B] px-[32px] py-[10px] text-[12px] mt-[24px] font-semibold rounded';
